@@ -1,0 +1,60 @@
+/* WRITE YOUR CSS CODE HERE */
+
+.lnk
+{
+    padding-left:13px;
+    font-size:15px;
+}
+.log
+{
+    padding-left:18px;
+     background:url("../design/tray-logout.gif") 0 50% no-repeat;
+     text-transform:uppercase;
+}
+.btn
+{
+    background-color:#1565C0;
+    color:white;
+    width:80px;
+}
+.fixheader
+{
+    position:absolute;
+}
+.time_war
+{
+    color:Red;
+    font-size:15px;
+}
+.loading
+    {
+        font-family: Arial;
+        font-size: 10pt;
+        border: 5px solid #67CFF5;
+        width: 200px;
+        height: 100px;
+        display: none;
+        position: fixed;
+        background-color: White;
+        z-index: 999;
+        padding-top:250px;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: black;
+        z-index: 99;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        -moz-opacity: 0.8;
+        min-height: 100%;
+        width: 100%;
+    }
+.top_lbl
+{
+    position: absolute;
+    top: 50%;
+    right: 50%;
+    margin-top: -24px;
+    margin-right: -24px;
+}

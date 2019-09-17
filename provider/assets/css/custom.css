@@ -1,0 +1,127 @@
+.mar
+{
+    font-size:25px;
+    font-weight:bolder;
+}
+.war
+{
+    color:Red;
+    font-size:20px;
+}
+.likbtn
+{
+    color:Blue;
+    text-decoration:underline;
+}
+.likbtn:hover
+{
+    color:Blue;
+    text-decoration:none;
+}
+.abt
+{
+    font-size:17px;
+    line-height:160%;
+    text-align: justify;
+}
+.myprofile-description
+{
+    
+    font-size:18px;
+}
+.pagetitle
+{
+    font-size:40px;
+    font-family:@French Script MT;
+    margin-top:5px;
+}
+.howwork
+{
+    font-size:30px;
+    font-weight:700;
+    margin-left:400px;
+    padding-top:10px;
+}
+.stepno
+{
+    font-size:20px;
+    font-weight:900;
+}
+.stepname
+{
+    font-size:20px;
+    font-weight:300;
+}
+.stepdetail
+{
+    font-size:17px;
+    font-weight:300;
+}
+.notice_arrow
+{
+    width: 100px;
+    height: 40px;
+  /*  background:#727370;
+    font-size:20px;
+    color:black;*/
+    float:left;
+    position: relative;
+    -webkit-animation: mymove 0.6s infinite; /* Chrome, Safari, Opera */
+    animation: mymove 0.6s infinite;
+}
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes mymove 
+{
+    from {left: 0px;}
+    to {left: 44px;}
+}
+
+@keyframes mymove 
+{
+    from {left: 0px;}
+    to {left: 44px;}
+}
+
+.dlytimming
+{
+    font-size:18px;
+}
+.L_D
+{
+    font-size:15px;
+}
+.shadowclass
+{
+    box-shadow:10px 10px 5px gray;
+}
+
+.loading
+    {
+        font-family: Arial;
+        font-size: 10pt;
+        border: 5px solid #67CFF5;
+        width: 200px;
+        height: 100px;
+        display: none;
+        position: fixed;
+        background-color: White;
+        z-index: 999;
+        padding-top:250px;
+        
+        position: fixed;
+        top: 0;
+        left: 0;
+        background-color: black;
+        z-index: 99;
+        opacity: 0.8;
+        filter: alpha(opacity=80);
+        -moz-opacity: 0.8;
+        min-height: 100%;
+        width: 100%;
+    }
+.time_war
+{
+    color:Red;
+    font-size:15px;
+}

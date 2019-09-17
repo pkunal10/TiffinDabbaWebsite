@@ -1,0 +1,161 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="user_with_out_links.master.cs" Inherits="user_user_with_out_links" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="tiffin dabba,tiffin dabba anand,tiffin dabba vidhya nagar,online food booking anand">
+    <meta name="description" content="tiffin dabba is a online food booking website in anand and vallabh vidhyanagar">
+    <!--[if ie]><meta content='IE=8' http-equiv='X-UA-Compatible'/><![endif]-->
+    <!-- bootstrap -->
+    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet">
+
+    <link href="themes/images/shortcut_icon.png" rel="shortcut icon">
+    <link href="themes/css/bootstrappage.css" rel="stylesheet" />
+
+    <!-- global styles -->
+    <link href="themes/css/flexslider.css" rel="stylesheet" />
+    <link href="themes/css/main.css" rel="stylesheet" />
+    <link href="themes/css/my_css.css" rel="stylesheet" />
+
+    <!-- scripts -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="themes/js/quicksearch.js"></script>
+    <script src="themes/js/jquery-1.7.2.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="themes/js/superfish.js"></script>
+    <script src="themes/js/jquery.scrolltotop.js"></script>
+    <!--[if lt IE 9]>			
+			<script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+			<script src="js/respond.min.js"></script>
+		<![endif]-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div class="row floating-menu">
+            <div class="span5"></div>
+            <div style="background-color: #8a799c;" class="text-center span4">
+                <p style="margin-top: 10px; color: white; font-size: 23px; font-weight: 900">Call Us :- 8875041417</p>
+            </div>
+            <div class="span3"></div>
+        </div>
+        <div id="top-bar" class="container">
+            <div class="row">
+                <div class="span4">
+                    <!--<form method="POST" class="search_form">
+						<input type="text" class="input-block-level search-query" Placeholder="eg. T-sirt">
+					</form>-->
+                    <img src="user/themes/images/logo_td.png" style="height: 100px; width: 200px;" />
+                </div>
+                <div class="span8">
+                    <div class="account pull-right">
+                        <ul class="user-menu">
+
+                            <li><a href="user/About_us.aspx" class="nav_bar_font_color">About Us</a></li>
+                            <li><a href="user/Terms_and_conditions.aspx" class="nav_bar_font_color">Terms</a></li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="wrapper" class="container">
+            <section class="navbar main-menu">
+                <div class="navbar-inner main-menu">
+
+                    <nav id="menu" class="pull-right">
+                        <ul>
+                            <li><a href="user/Home.aspx">Home</a></li>
+                            <%--<li><a href="./products.html">Tiffin Book</a>					
+								<ul>
+									<li><a href="user/Simple_tiffin.aspx">Simple Tiffin</a></li>									
+									<li><a href="user/Tiffin_with_sweet.aspx">Tiffin With Sweet</a></li>
+									<li><a href="user/Monthly_order.aspx">Monthly Booking</a></li>									
+								</ul>
+							</li>--%>
+
+
+                            <!--<li><a href="./products.html">Best Seller</a></li>
+							<li><a href="./products.html">Top Seller</a></li>-->
+                        </ul>
+                    </nav>
+                </div>
+            </section>
+
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <section id="footer-bar">
+                <div class="row">
+                    <div class="span3">
+                        <h4>Quick Links</h4>
+                        <ul class="nav">
+                            <!-- <li><a href="./index.html">Homepage</a></li>   -->
+                            <li><a href="user/Home.aspx">Home</a></li>
+                            <li><a href="user/About_us.aspx">About Us</a></li>
+                            <li><a href="user/Terms_and_conditions.aspx">Terms & Conditions</a></li>
+
+                            <!-- <li><a href="./cart.html">Your Cart</a></li> -->
+
+                        </ul>
+
+                    </div>
+                    <div class="span4"></div>
+
+                    <div class="span5">
+                        <p class="logo">
+                            <img src="user/themes/images/logo_td.png" class="site_logo" alt=""></p>
+                        <p>No need to crave for ghar ka khana anymore.TIFFIN DABBA is here to take your taste buds on a ride.</p>
+                        <br />
+                        <span>
+                            <a class="facebook" href="https://www.facebook.com/Tiffin-Dabba-1790249584564007/?skip_nax_wizard=true" target="_blank">
+                                <img src="user/themes/images/facebook.png"></a>
+                            <a class="twitter" href="http://www.instagram.com/tiffin_dabba" target="_blank">
+                                <img src="user/themes/images/instagram.png"></a>
+                            <!-- <a class="skype" href="#">Skype</a>
+							<a class="vimeo" href="#">Vimeo</a> -->
+                        </span>
+                    </div>
+                </div>
+            </section>
+            <section id="copyright">
+                <span>&copy; 2017 Tiffin Dabba.</span><center>Developed By:- <a href="http://www.kunalsofttech.com" target="_blank">Kunal Soft-Tech</center>
+            </section>
+        </div>
+        <script src="themes/js/common.js"></script>
+        <script src="themes/js/jquery.flexslider-min.js"></script>
+        <script>
+            (function (i, s, o, g, r, a, m) {
+                i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date(); a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+            })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+            ga('create', 'UA-89645654-1', 'auto');
+            ga('send', 'pageview');
+
+        </script>
+        <script type="text/javascript">
+            $(function () {
+                $(document).ready(function () {
+                    $('.flexslider').flexslider({
+                        animation: "fade",
+                        slideshowSpeed: 4000,
+                        animationSpeed: 600,
+                        controlNav: false,
+                        directionNav: true,
+                        controlsContainer: ".flex-container" // the container that holds the flexslider
+                    });
+                });
+            });
+        </script>
+    </form>
+</body>
+</html>

@@ -1,0 +1,238 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="admin.master.cs" Inherits="admin_admin" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <%--<title>TIFFIN DABBA</title>--%>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="css/reset.css" />
+    <link rel="Shortcut Icon" href="tmp/shortcut_icon.png" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="css/2col.css" title="2col" />
+    <link rel="alternate stylesheet" media="screen,projection" type="text/css" href="css/1col.css" title="1col" />
+    <!--[if lte IE 6]><link rel="stylesheet" media="screen,projection" type="text/css" href="css/main-ie6.css" /><![endif]-->
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" media="screen,projection" type="text/css" href="css/mystyle.css" />
+    <%--<script type="text/javascript" src="js/jquery.js"></script>
+<script type="text/javascript" src="js/switcher.js"></script>
+<script type="text/javascript" src="js/toggle.js"></script>
+<script type="text/javascript" src="js/ui.core.js"></script>
+<script type="text/javascript" src="js/ui.tabs.js"></script>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $(".tabs > ul").tabs();
+    });
+	</script>--%>
+    <style type="text/css">
+        .style1 {
+            width: 100%;
+        }
+    </style>
+</head>
+
+
+<body>
+    <form id="f1" runat="server">
+        <div id="main">
+            <!-- Tray -->
+            <div id="tray" class="box">
+                <p class="f-left box">
+                    <!-- Switcher -->
+                    <span class="f-left" id="switcher"></span>Company: <strong>TIFFIN DABBA</strong>
+                </p>
+                <p class="f-right">
+                    User: <strong>Administrator</strong> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <strong>
+                        <asp:LinkButton ID="LinkButton11" CssClass="log" runat="server"
+                            OnClick="LinkButton11_Click">Log Out</asp:LinkButton></strong>
+                </p>
+            </div>
+            <!--  /tray -->
+            <hr class="noscreen" />
+            <!-- Menu -->
+            <div id="menu" class="box">
+                <ul class="box f-right">
+                    <li>
+                        <asp:LinkButton ID="Visit_site_lbtn" runat="server" OnClick="Visit_site_lbtn_Click"><span><strong>Visit Site &raquo;</strong></span></asp:LinkButton></li>
+                </ul>
+                <ul class="box">
+                    <li>
+                        <asp:LinkButton ID="LinkButton13" runat="server" OnClick="LinkButton13_Click"><span>Registration Of Providers</span></asp:LinkButton></li>
+                    <!-- Active -->
+                    <li><a href="Today_cancelled_ff_order.aspx"><span>Today Cancelled Fast Food Order</span></a></li>
+                    <li><a href="Today_readed_ff_orders.aspx"><span>Today Readed Fast Food Order</span></a></li>
+                    <li><a href="Today_delivered_ff_order.aspx"><span>Today Delivered Fast Food Order</span></a></li>
+                    <li>
+                        <a href="New_fast_food_order.aspx"><span>New Fast Food Order</span></a>
+                        <asp:Label ID="no_of_order_lbl" BackColor="#f89406" ForeColor="white" Width="15px" runat="server" Style="text-align: center; border-radius: 100px; font-weight: 900" CssClass="warning" Text=""></asp:Label>
+                    </li>
+                    <%--<li><a href="#"><span>Lorem ipsum</span></a></li>
+      <li><a href="#"><span>Lorem ipsum</span></a></li>
+      <li><a href="#"><span>Lorem ipsum</span></a></li>
+      <li><a href="#"><span>Lorem ipsum</span></a></li>
+      <li><a href="#"><span>Lorem ipsum</span></a></li>--%>
+                </ul>
+            </div>
+            <!-- /header -->
+            <hr class="noscreen" />
+            <!-- Columns -->
+            <div id="cols" class="box">
+                <!-- Aside (Left Column) -->
+                <div id="aside" class="box">
+                    <div class="padding box">
+                        <!-- Logo (Max. width = 200px) -->
+                        <p id="logo" style="background: #2196F3;">
+                            <img src="tmp/tiffin_white_small.png" alt="LOGO" />
+                        </p>
+                        <!-- Search -->
+
+
+                    </div>
+                    <!-- /padding -->
+                    <div style="height: 598px;">
+                        <table class="style1" cellspacing="5">
+                            <tr>
+                                <td class="lnk">
+                                    <a href="AppSetting.aspx">App Setting</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <a href="SendNotification.aspx">Send Notification</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <a href="Del_charges.aspx">Fast Food Delivery Charges</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <a href="Add_remove_fastfood_cat.aspx">Fast Food Category</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <a href="All_fast_food_order.aspx">All Fast Food Order</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton14" runat="server" OnClick="LinkButton14_Click">Change Orders Time</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton1" runat="server" OnClick="LinkButton1_Click">Add & Remove City</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton7" runat="server" OnClick="LinkButton7_Click">Add & Remove Delivery Area</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <a href="AddUpdateSpecialTiffin.aspx">Add Special Tiffin</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <a href="ListSpecialTiffin.aspx">List Special Tiffin</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <a href="ViewSpecialTiffinOrder.aspx">View Special Tiffin Order</a>&nbsp;<asp:Label ID="SPTNoOfOdr" BackColor="#f89406" ForeColor="white" Width="15px" runat="server" Style="text-align: center; border-radius: 100px; font-weight: 900" CssClass="warning" Text=""></asp:Label>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <a href="Add_remove_fastfood_products.aspx">Add Fast Food Products</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <a href="List_of_fastfood.aspx">List Of Fast Food</a>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton2" runat="server" OnClick="LinkButton2_Click">Simple Tiffin Add</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton3" runat="server" OnClick="LinkButton3_Click">Simple Tiffin List</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton5" runat="server" OnClick="LinkButton5_Click">Tiffin With Sweet Add</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton6" runat="server" OnClick="LinkButton6_Click">Tiffin With Sweet List</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton15" runat="server" OnClick="LinkButton15_Click">Monthly Tiffin Add</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton16" runat="server" OnClick="LinkButton16_Click">Monthly Tiffin List</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton8" runat="server" OnClick="LinkButton8_Click">View Simple Tiffin Order</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton9" runat="server" OnClick="LinkButton9_Click1">View Trial Tiffin Order</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton18" runat="server" OnClick="LinkButton9_Click">View Tiffin With Sweet Order</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton17" runat="server" OnClick="LinkButton17_Click">View Monthly Order</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton10" runat="server" OnClick="LinkButton10_Click">View Provider</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton12" runat="server" OnClick="LinkButton12_Click">View User</asp:LinkButton></td>
+                            </tr>
+                            <tr>
+                                <td class="lnk">
+                                    <asp:LinkButton ID="LinkButton4" runat="server" OnClick="LinkButton4_Click">Change Password</asp:LinkButton></td>
+                            </tr>
+                        </table>
+
+
+
+                    </div>
+                </div>
+                <!-- /aside -->
+                <hr class="noscreen" />
+                <div id="content" class="box" style="overflow: auto; padding: 16px;">
+
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+
+                </div>
+            </div>
+            <!-- /cols -->
+            <hr class="noscreen" />
+            <!-- Footer -->
+            <div id="footer" class="box">
+                <p class="f-left">&copy; 2009 <a href="#">TIFFIN DABBA</a>, All Rights Reserved &reg;</p>
+                <%--<p class="f-right">Templates by <a href="#">Kunal</a></p>--%>
+            </div>
+            <!-- /footer -->
+        </div>
+        <!-- /main -->
+    </form>
+</body>
+
+</html>
